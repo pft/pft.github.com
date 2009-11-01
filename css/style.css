@@ -38,9 +38,10 @@ ul.main > li.active > h2 {
     color: #fff;
 }
 ul.footer {
-    position: absolute;
-    bottom: 0;
+    background-color: #fff;
+    top: 0;
     padding-bottom: 1em;
+    position: absolute;
     text-align: left;
     width: 100%;
 }
@@ -52,7 +53,6 @@ ul.footer li > h2 {
     font-size: 1em;
     line-height: 3em;
 }
-
 ul.menu > li .content {
     height: auto;
     line-height: 1.6em;
@@ -70,11 +70,10 @@ ul.menu > li .one-column {
     -webkit-column-count: 1;
     -moz-column-count: 1;
 }
-
 ul.footer > li .content {
     display: none;
     position: absolute;
-    bottom: 3.5em;
+    top 3.5em;
     left: 0;
     padding: 1em 1em 1em;
     width: 95%;
@@ -85,67 +84,52 @@ ul.footer > li .content {
 ul.footer > li:hover .content {
     display: block;
 }
-
-
 ul.menu > li .content img {
     float: left; 
     margin:  1ex 1em 0 0;
 }
-
 ul.menu > li .one-column img {
     float: none; 
     margin:  1ex 1em 0 0;
 }
-
 ul.menu > li .content p {
     display: inline;
 }
-
-ul.menu > li .content p:before {
-    content: "\0020 \0020 \0020 \00B6 \0020"; 
-    color: #a60808;
+ul.menu > li .content p br {
+    display: inline;
 }
 
-ul.menu > li .content p:nth-child(1):before {
-    content: "\0020 \0020 \0020 \0020"; 
+p.inline:before {
+     content: "\0020 \0020 \0020 \00B6 \0020"; 
+     color: #a60808;
 }
 
-ul.menu > li .content p:nth-child(1) {
+ul.menu > li .content p:first-child {
     font-size: 1.4em;
     font-weight: bold;
     display: block;
     padding-bottom: 1em;
 }
-
 pre {
     padding: 1.4em 1em 1em 0;
     font-size: 1.2em;
     line-height: 1.4em;
 }
-
 ul.menu > li .content ul, dl {
     padding: 1.4em 1em 1em 0;
 }
-
 dt {
     margin: 2em 0 1em 0;
 }
-
-
 a:link, a:visited, a:hover, a:active {
     color: #000;
     font-weight: bold;
     text-decoration: none;
     border-bottom: 1px dotted #e0b9b9;
 }
-
 a:hover {
     color: #ce0909;
 }
-
 a:active {
     color: #aa0000;
-}
-.clearer {
-    clear: both;
 }
