@@ -40,6 +40,7 @@ ul.main > li.active > h2 {
 ul.footer {
     background-color: #fff;
     top: 0;
+    bottom: auto;
     padding-bottom: 1em;
     position: absolute;
     text-align: left;
@@ -132,4 +133,34 @@ a:hover {
 }
 a:active {
     color: #aa0000;
+}
+
+@media only screen and (max-device-width: 480px){
+    ul.menu > li .content {
+	padding: 2em 1em;
+	overflow: auto;
+	-webkit-column-count: 1;
+	-moz-column-count: 1;
+    }
+    ul.footer {
+	padding: 0 1em;
+    }
+    ul.footer > li .content {
+	display: none;
+	position: absolute;
+	bottom: auto;
+    }
+    ul.main > li:hover > h2 {
+	background: #a00;
+    }
+    ul.main > li.active > h2 {
+	background: #a00;
+	color: #fff;
+    }
+    ul.main > li.active {
+	border-bottom: 1px solid #a00;
+    }
+    #all {
+	background-image: none;
+    }
 }
