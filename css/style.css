@@ -1,6 +1,6 @@
 html {
     font-size: 66%;
-    font-family: "Droid Serif";
+    font-family: "Droid Serif", Georgia, serif;
 }
 html, body, #all {
     height: 100%;
@@ -53,16 +53,12 @@ ul.footer li > h2 {
     line-height: 3em;
 }
 
-ul.footer li.content {
-    position: absolute;
-    bottom: 2em;
-}
 ul.menu > li .content {
     height: auto;
     line-height: 1.6em;
     overflow: hidden;
     text-align: left;
-    padding: 2em 0 0;
+    padding: 2em 0 2em;
     -webkit-column-count: 2;
     -webkit-column-width: 40%;
     -webkit-column-gap: 2em; 
@@ -82,10 +78,9 @@ ul.footer > li .content {
     left: 0;
     padding: 1em 1em 1em;
     width: 95%;
-    border-left: 1px solid #acacac;
-    border-top: 1px solid #acacac;
-    border-right: 1px solid #acacac;
+    border: 1px solid #acacac;
     background-color: #f1f1f1;
+    opacity: 0.99;
 }
 ul.footer > li:hover .content {
     display: block;
