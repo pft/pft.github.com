@@ -57,7 +57,7 @@
 	    </ul>
 	  </div>
 	</li>
-<li><h2>Typography</h2>
+<li><h2>Typefaces</h2>
       <div class="content one-column">
 	<p>Some preview samples of typefaces I am currently working on. Not yet for download. They still require a lot of work.</p>
 	  <h3>Woerden</h3>
@@ -67,7 +67,8 @@
 	  <img src="images/fontsamples/woerden.png" alt="the woerden typeface"  />
 	  <h3>Brooklyn</h3>
 	  <p>
-	  A revival / mix of an two unnamed Art Deco / Amsterdam School display types. 
+	  A revival / mix of an two unnamed Art Deco / Amsterdam School display types.
+	  </p><p class="inline">
 The numerals are taken from the amazing house numbers @ the Jan van Scorel
 Straat in Utrecht, whose architects are Amsterdam School architects
 Jacobus van Laen en Jan Hessel de Groot. The basis for the letters are
@@ -112,8 +113,8 @@ Schwartz. This was the first type I digitised in order to learn the art and the 
 	    <p>
 	      <a target="_blank" href="http://github.com/pft/javascript/blob/master/format.js">Format.js</a>
 	      This small library implements the function known in other languages as <code>format</code> or <code>(s)print(f)</code>. 
-	      </p><p>It makes use of the amazingly powerful String.replace function. That function takes two arguments, the first of which is a regular expression, against which to test. The second can be a replacement string or a function, that receives as arguments the whole match and its various submatches, and that for each match in the string, if you are feeding String.replace a global regexp.</p>
-	      <p>My format function is implemented in a mere 69 lines of code because of that. In its core, it basically is a single invocation of the replace method. The definition I use for the directives is (how could it not be?) based on the GNUEmacs lisp format function. See the comments in the file for that. Besides that, 	      <a target="_blank" href="http://github.com/pft/javascript/blob/master/format.js">Format.js</a> comes with a function <code>positionalFormat</code>, which is so neat and small, that I can just show it right here:
+	    </p><p class="inline">It makes use of the amazingly powerful String.replace function. That function takes two arguments, the first of which is a regular expression, against which to test. The second can be a replacement string or a function, that receives as arguments the whole match and its various submatches, and that for each match in the string, if you are feeding String.replace a global regexp.</p>
+	      <p class="inline">My format function is implemented in a mere 69 lines of code because of that. In its core, it basically is a single invocation of the replace method. </p><p class="inline">The definition I use for the directives is (how could it not be?) based on the GNUEmacs lisp format function. See the comments in the file for that. Besides that, 	      <a target="_blank" href="http://github.com/pft/javascript/blob/master/format.js">Format.js</a> comes with a function <code>positionalFormat</code>, which is so neat and small, that I can just show it right here:
 	    </p>
 <pre>
 function positionalFormat (str){
@@ -145,6 +146,7 @@ positionalFormat('argument { 1 } '
 	  <div class="content">
 	  <p>Any code you may find on this site presented explicitly as downloadable is licenced under the General Public Licence (GPL), version 3, unless stated otherwise in the source code.</p> 
 	  <p>For any other creative expressions, such as design elements of this site, I have not decided on a licence (if any) yet, so if you want to use any of that, or are in doubt as to the above, you will have to contact me.</p> 
+	  <p>I do not guarantee any of the code to even do something.</p>
 	  </div>
 	</li>
 	<li>
