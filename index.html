@@ -1,11 +1,170 @@
-<?xml version="1.0" encoding="iso-8859-1"?>
+<?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
 "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
-  <head>
-    <title>Niels Giesen on Github</title>
-  </head>
-  <body>
-    First commit...
+<head>
+  <title>Niels Giesen</title>
+  <link rel="Stylesheet" type="text/css" href="css/style.css" media="all" />
+  <script type="text/javascript" src="http://www.google.com/jsapi"></script>
+  <script type="text/javascript">
+    // <![CDATA[
+    google.load("jquery", "1");
+    // ]]>
+  </script>
+  <script type="text/javascript">
+    // <![CDATA[
+    $(function(){
+	$('ul.main > li > .content').hide();
+	$('ul.main > li > h2').click(function(){
+	    $(this).parent('li')
+	    .toggleClass('active')
+	    .find('.content')
+	    .slideToggle()
+	    .end()
+	    .siblings()
+	    .removeClass('active')
+            .find('.content')
+	    .slideUp();
+	})
+    });
+    // ]]>
+  </script>
+
+</head>
+<body>
+  <div id="all">
+    <ul class="main menu">
+      	<li>
+	  <h2>About me</h2>
+	  <div class="content">
+	    <p>
+	    <img src="images/avatar.png"/>
+	      Works as: web programmer. <br/ >Likes: languages, gardening, Islam, cleaning-up, reading, typography, music, cooking, computing, appointments, knitting, cars.</p>
+	      <p>It's up to you to ascertain which of the above have intentionally been put there to interfere with character profiling of Big Brother G and the like. </p>	
+	  </div>
+	</li>
+	<li>
+	  <h2>Web Design</h2>
+	  <div class="content">
+	    <p>My experience in designing and building websites
+	    stretch from making templates for Joomla, Wordpress and Indexhibit to designing and programming
+	    full-fledged web-applications from the ground up. As for techniques, I am well versed in CSS, XHTML, JavaScript (including experience in jQuery, Prototype &amp; Scriptaculous and mootools), and I get by in PHP.</p>
+	    <p>These are some free-for-public sites I designed. As you can see I like uncluttered designs.</p>
+	    <ul>
+	      <li><a target="_blank" href="http://irisfrerichs.nl">irisfrerichs.nl</a></li>
+	      <li>this very site itself</li>
+	    </ul>
+	  </div>
+	</li>
+<li><h2>Typography</h2>
+      <div class="content one-column">
+	<p>Some preview samples of typefaces I am currently working on. Not yet for download. They still require a lot of work.</p>
+	  <h3>Woerden</h3>
+	  <p>
+	  An original sans-serif italic. Regular and bold are in the make too.
+	  </p>
+	  <img src="images/fontsamples/woerden.png" alt="the woerden typeface"  />
+	  <h3>Brooklyn</h3>
+	  <p>
+	  A revival / mix of an two unnamed Art Deco / Amsterdam School display types. 
+The numerals are taken from the amazing house numbers @ the Jan van Scorel
+Straat in Utrecht, whose architects are Amsterdam School architects
+Jacobus van Laen en Jan Hessel de Groot. The basis for the letters are
+from the cover of the book <q>Gerschwin - His Life and Music</q> by Charles
+Schwartz. This was the first type I digitised in order to learn the art and the tools.
+	  </p>
+         <img src="images/fontsamples/brooklyn.png" alt="the brooklyn typeface"/>
+
+      </div>
+      </li>
+      <li>
+	<h2>Emacs</h2>
+	<div class="content">
+		<p>The kitchen sink, the operating system in disguise, the innovation, the Birth of Free Software, the butterflies... 
+		</p>
+		<p>You can find all of these free <a target="_blank" href="http://gnuemacs.org/">Emacs</a> extensions of mine over @ <a target="_blank" href="http://github.com/pft">github</a>.</p>		
+		<dl> 
+		  <dt>     <a href="http://github.com/pft/gimpmode">GimpMode</a>   </dt> 
+		  <dd>Emacs-<a target="_blank" href="http://gimp.org" title="GIMP Image Manipulation Program" target="_blank">GIMP</a> interaction mode. For writing script-fu.</dd> 
+		  <dt>     <a target="_blank" href="http://github.com/pft/mingus">Mingus</a>   </dt> 
+		  <dd>My largest program to date. Interfaces <a href="http://www.musicpd.org/">mpd</a>, which is a Music Player Daemon. I like to think of it as the Amarok or iTunes for Emacs. Of course there is emms, but I just like to have an overview of my songs.</dd> 
+		  <dt>     <a target="_blank" href="http://github.com/pft/elisp-assorted/blob/master/lisp-magick-doc.el">lisp-magick-doc</a></dt> 
+		  <dd>     Lookup documentation for <a target="_blank" href="http://www.imagemagick.org/">ImageMagick</a>, an image manipulation toolbox.Handles both C-names and lisp-magick-names   </dd> 
+		  <dt>     <a target="_blank" href="http://github.com/pft/elisp-assorted/blob/master/srt-mode.el">srt-mode</a>   </dt> 
+		  <dd>    Mode for editing subtitles, using    <a target="_blank" href="http://www.mplayerhq.hu">mplayer</a>    or <a target="_blank" href="http://www.videolan.org/vlc/">VLC</a>    as a backend. In development, but usable </dd> 
+		  <dt>     <a target="_blank" href="http://github.com/pft/elisp-assorted/blob/master/nyquist.el">nyquist.el</a>   </dt> 
+		  <dd>     Quite a Spartan elisp library for interfacing the<a target="_blank" href="http://www.cs.cmu.edu/%7Emusic/nyquist"> nyquist</a> language format music synthesis and the documentation of nyquist symbols.   </dd> 
+		  <dt><a target="_blank" href="http://github.com/pft/elisp-assorted/blob/master/poor-mans-bidi.el">poor-mans-bidi</a></dt> 
+		  <dd>Poor mans mode for editing files with bidirectional text</dd> 
+		  <dt><a target="_blank" href="http://github.com/pft/elisp-assorted/blob/master/yiddish.el">yiddish.el</a></dt> 
+		  <dd>Quail input-method for Yiddish </dd> 
+		  <dt><a target="_blank" href="http://github.com/pft/elisp-assorted/blob/master/gothic.el" title="gothic input method">gothic.el</a></dt> 
+		  <dd>Quail input-method for Goths</dd> 
+		  <dd> </dd> 
+		</dl> 
+	      </div>
+	</li>
+	<li>
+	  <h2>JavaScript</h2>
+	  <div class="content">
+	    <p>The only thing I really hate about JavaScript is the requirement that you put conditions between parentheses.</p>
+	    <p>
+	      Format.js
+	      This small library implements the function known in other languages as <code>format</code> or <code>(s)print(f)</code>. 
+	      </p><p>It makes use of the amazingly powerful String.replace function. That function takes two arguments, the first of which is a regular expression, against which to test. The second can be a replacement string or a function, that receives as arguments the whole match and its various submatches, and that for each match in the string, if you are feeding String.replace a global regexp.</p>
+	      <p>My format function is implemented in a mere 69 lines of code because of that. In its core, it basically is a single invocation of the replace method. The definition I use for the directives is (how could it not be?) based on the GNUEmacs lisp format function. See the comments in the file for that. Besides that, Format.js comes with a function <code>positionalFormat</code>, which is so neat and small, that I can just show it right here:
+	    </p>
+<pre>
+function positionalFormat (str){
+  var args = arguments;
+  return str.replace(/{\s*(\d+)\s*}/g, 
+    function(match, num){
+      return args[parseInt(num)+1]||match;
+  });
+};
+</pre><p>
+How to use? Well:</p>
+<pre>
+positionalFormat('argument { 1 } '
+  + '(or is it { 2 }, or { 0 }?) '
+  + 'comes { 1 }',
+  3, 'first', 1);
+</pre>
+<p>
+  evaluates to: “argument first (or is it 1, or 3?) comes first”. Now ain’t that neat? See how you can reuse arguments?
+ 	    </p>
+	  </div>
+	</li>
+
+
+    </ul>
+    <ul class="menu footer">
+	<li>
+	  <h2>Licence &amp; disclaimer</h2>
+	  <div class="content">
+	  <p>Any code you may find on this site presented explicitly as downloadable is licenced under the General Public Licence (GPL), version 3, unless stated otherwise in the source code.</p> 
+	  <p>For any other creative expressions, such as design elements of this site, I have not decided on a licence (if any) yet, so if you want to use any of that, or are in doubt as to the above, you will have to contact me.</p> 
+	  </div>
+	</li>
+	<li>
+	  <h2>Contact</h2>
+	  <div class="content">
+	    <p>Contact me @ <code>nielsFORKgiesen@gmailSPOONcom</code>, but do replace those kitchen utensils with dots before pressing <kbd>send</kbd>.</p>
+	  </div>
+	</li>
+      </ul>
+    </div>
   </body>
 </html>
+ 
+ 	    
+ 	    
+ 	    
+ 	    
+ 	    
+ 	    
+ 	    
+ 	    
+ 	    
+ 	    
+ 	    	    
