@@ -56,10 +56,11 @@ ul.footer li > h2 {
 }
 ul.menu > li .content {
     height: auto;
-    line-height: 1.6em;
     overflow: hidden;
     text-align: left;
     padding: 2em 0 2em;
+    font-size: 1.4em;
+    line-height: 1.4em;
     -webkit-column-count: 2;
     -webkit-column-width: 40%;
     -webkit-column-gap: 2em; 
@@ -74,7 +75,6 @@ ul.menu > li .one-column {
 ul.footer > li .content {
     display: none;
     position: absolute;
-    top 3.5em;
     left: 0;
     padding: 1em 1em 1em;
     width: 95%;
@@ -106,7 +106,7 @@ p.inline:before {
 }
 
 ul.menu > li .content p:first-child {
-    font-size: 1.4em;
+    font-size: 1.0em;
     font-weight: bold;
     display: block;
     padding-bottom: 1em;
