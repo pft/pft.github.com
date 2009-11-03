@@ -136,6 +136,9 @@ a:active {
 }
 
 @media only screen and (max-device-width: 480px){
+    html {
+	font-family: serif;
+    }
     ul.menu > li .content {
 	padding: 2em 1em;
 	overflow: auto;
